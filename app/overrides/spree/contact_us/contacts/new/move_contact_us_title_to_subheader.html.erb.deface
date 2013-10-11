@@ -1,0 +1,8 @@
+<!-- surround 'h1' -->
+<% content_for :subheader do %>
+  <%= render_original %>
+<% end %>
+
+Deface::Override.new(:virtual_path => "spree/layouts/spree_application",
+                 :name => "footer-left",
+                 :remove => "#footer-left")
