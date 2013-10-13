@@ -7,10 +7,9 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.8.7'
 
 
-  s.author    = 'Sai Kiran Mothe'
+  s.author    = 'Sai Kiran Mothe.'
   s.email     = 'saikiran.mothe@gmail.com'
   s.homepage  = 'http://www.spreecommerce.com'
-
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
