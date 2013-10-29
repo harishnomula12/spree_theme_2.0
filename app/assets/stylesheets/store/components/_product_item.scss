@@ -52,11 +52,11 @@
   overflow: hidden;
 
   &, img {
-    @include border-radius(165px);
+    @include border-radius(150px);
   }
 
   img {
-    padding: 46px 37px 46px 38px;
+    padding: 46px 37px 46px 10px;
   }
 }
 
