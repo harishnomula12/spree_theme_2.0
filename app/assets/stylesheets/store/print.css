@@ -15,6 +15,10 @@
     display: none !important;
   }
 
+  #nav-bar{
+     list-style: none;
+  }
+
   #wrapper a:link:after, #wrapper a:visited:after {
     content: " (" attr(href) ") ";
     font-size: 90%;
