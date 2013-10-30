@@ -8,9 +8,11 @@
           </div>
           <div class="product-info">
             <h1 class="product-title"><%= product.name %> - <%= product.sku %></h1>
+           
            <!--  <div class="product-description">
               <%= product.description %>
             </div> -->
+           
             <div class="product-order-form">
               <%= form_for :order, :url => populate_orders_path do |f| %>
                 <span class="product-price">
