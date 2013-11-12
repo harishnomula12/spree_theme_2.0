@@ -6,20 +6,20 @@
           <div class="product-image">
             <%= link_to product_image(product), product %>
           </div>
-          <div class="product-info">
+          <div class="product-info" align="center">
             <h1 class="product-title"><%= product.name %> - <%= product.sku %></h1>
            
            <!--  <div class="product-description">
               <%= product.description %>
             </div> -->
            
-            <div class="product-order-form">
+            <div class="product-order-form" align="center">
               <%= form_for :order, :url => populate_orders_path do |f| %>
                 <span class="product-price">
                   <%= product.display_price %>
                 </span>
                 <%= number_field_tag (product.has_variants? ? :quantity : "variants[#{product.master.id}]"),
-                  1, :class => 'title', :in => 1..Spree::Stock::Quantifier.new(product.master).total_on_hand, :min => 1 %>
+                  1, :class => 'title', :in => 1..Spree::Stock::Quantifier.new(product.master).total_on_hand, :min => 1 %><br><br>
                 <%= button_tag :id => 'add-to-cart-button', :type => :submit do %>
                   <%= content_tag(:i, '', :class => 'icon-plus') + " " + Spree.t(:add_to_cart) %>
                 <% end %>
