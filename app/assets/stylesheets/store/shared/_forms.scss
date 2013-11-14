@@ -81,7 +81,7 @@ label.ui-button {
   }
 }
 .sidebar-item ul{ list-style: none;}
-.sidebar-item .taxons-list li
+.taxons-list li
 {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
   background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
@@ -113,4 +113,7 @@ label.ui-button {
   text-decoration:none;
   text-align:center;
   margin-bottom : 5px;
+}
+div#content.columns.twelve{
+  width: auto;
 }

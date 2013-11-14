@@ -1,3 +1,4 @@
+/*
 #subheader {
   @include single-box-shadow(darken($c_green, 10), 0, 0, 15px, 0, true);
 
@@ -21,6 +22,8 @@
     }
   }
 }
+
+*/
 
 .slider-pager {
   position: absolute;
@@ -112,6 +115,14 @@
 }
 
 #home-slider {
+
+  background-color : lighten($c_green, 5);
+  color : white;
+  padding : 2.5em 0.5em;
+  border-top : 5px solid lighten($c_green, 20);
+  border-bottom : 5px solid lighten($c_green, 20);
+  border-right : 5px solid lighten($c_green, 20);
+  border-radius: 13em/3em;
   h1 {
     font-size: 24px !important;
     font-weight: 600 !important;
