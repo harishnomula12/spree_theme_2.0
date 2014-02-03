@@ -1,0 +1,20 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+# en:
+#   hello: "Hello world"
+
+  #########################################
+en:
+  number:
+    # Used in number_to_currency()
+    currency:
+      format:
+        # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
+        format: "%u %n"
+        unit: "₹"
+        # These three are to override number.format and are optional
+        separator: "."
+        delimiter: " "
+        precision: 2
+  order_summary: "order_summary"
